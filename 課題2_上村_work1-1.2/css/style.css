@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.container {
+    display: flex;
+    max-width: 960px;
+    justify-content: space-between;
+}
+
+.box {
+    width: 30%;
+    height: 300px;
+
+}
+
+.blue {
+    background: blue;
+    border: solid black;
+}
+
+.container2 {
+    display: flex;
+    max-width: 960px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.red {
+
+    background: red;
+    border: solid black;
+}
