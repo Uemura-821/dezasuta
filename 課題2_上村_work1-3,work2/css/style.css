@@ -15,7 +15,7 @@ body {
     align-items: center;
     max-width: 960px;
     margin: 0 auto;
-    padding: 15px 30px;
+    padding: 15px 15px;
 
 }
 
@@ -26,14 +26,13 @@ h1 {
 
 ul {
     display: flex;
-    gap: 10px 0px;
-
+    gap: 10px;
 
 }
 
 
 li {
-    padding: 10px;
+    padding: 10px 10px;
     border-right: 1px solid #444;
 }
 
@@ -46,6 +45,7 @@ li:last-child {
     .header-inner,
     ul {
         flex-direction: column;
+        gap: 0;
         align-items: flex-start;
     }
 
@@ -57,7 +57,9 @@ li:last-child {
         border-right: none;
         border-bottom: 1px solid#444;
         width: 100%;
+        padding: 10px 0;
         box-sizing: border-box;
+
     }
 
     .nav {
