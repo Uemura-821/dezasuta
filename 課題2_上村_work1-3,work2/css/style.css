@@ -5,10 +5,6 @@
     border-bottom: 1px solid #ccc;
 }
 
-body {
-    margin: 0 auto;
-}
-
 .header-inner {
     display: flex;
     justify-content: space-between;
@@ -45,7 +41,6 @@ li:last-child {
     .header-inner,
     ul {
         flex-direction: column;
-        gap: 0;
         align-items: flex-start;
     }
 
