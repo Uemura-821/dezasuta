@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+.service {
+    margin: 0 auto;
+    max-width: 960px;
+    background: #eee;
+}
+
+h2 {
+    text-align: center;
+    color: #0f5132;
+    padding: 30px;
+}
+
+h3 {
+    display: flex;
+    align-items: flex-start;
+    color: #0f5132;
+    padding: 10px;
+}
+
+.service1,
+.service2,
+.service3 {
+    background: #fff;
+    width: 300px;
+    text-align: left;
+
+}
+
+p {
+    padding: 5px;
+}
+
+.bar {
+    display: inline-block;
+    width: 6px;
+    height: 18px;
+    background: #0f5132;
+}
+
+.service-box {
+    display: flex;
+    gap: 20px;
+    padding: 0 50px 50px 50px;
+
+}
+
+@media screen and (max-width:400px) {
+
+    .service-box {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 30px 30px 50px;
+
+    }
+}
+
+img {
+    width: 100%;
+}
