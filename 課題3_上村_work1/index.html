@@ -18,16 +18,20 @@
 
         for (let i = 1; i <= 10; i++) {
             result = result + i;
+            // result+=i;左側のものに右側のものをさらに足します、という意味
             console.log(result)
 
         }
 
-        if (result > 20) { console.log("20以上"); }
-        else if (result <= 20) {
-            console.log("20未満");
+        if (result >= 20) {
+            console.log("20以上");
+
         }
+        // else if (result < 20) {
+        //     console.log("20未満");
+        // }  20以上じゃないときは必然的に20未満になるから演算式いらない。
         else {
-            console.log("20以上でも20未満でもない");
+            console.log("20未満");
         }
 
 
