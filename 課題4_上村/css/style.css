@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+body {
+    background: #e8d9bf;
+}
+
+.header_slider img {
+    width: 100%;
+}
+
+.header {
+    position: relative;
+}
+
+/* ↑position: absoluteで動かしたいものの基準点にすることができる。 */
+
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7% 0 3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* align-itemsロゴとナビを上下中央に揃えている。 */
+/* paddingつけるときに%を使用すれば、
+サイズの変化に応じて幅を縮めることができる。55÷1920=3 136÷1920=7 */
+/* position: absoluteこの要素をどこに置くか、上に持ち上げている状態。 基準を決める必要がある。
+今回はヘッダーの画像を基準にしたいから、親要素であるheaderタグを基準とする。 */
+/* divタグはブロック要素で、画面幅いっぱいに広がるという特性があるが、これをつけることによってその特性が消えてしまい
+縮まってしまう。横幅100％で指定。
+box-sizing: border-box; 横幅に要素とpadding含めてくれる */
+.header_logo {
+    width: 277px;
+    width: 227px;
+}
+
+/* 文字データは2倍の起き差で入っている。
+455pxで入っているため、2分の1のサイズのwidth入れる。 */
+
+.pc_nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+/* liの間隔開ける */
+
+.pc_nav ul li {
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic,
+        "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    width: 105px;
+    text-align: center;
+}
+
+/* 一つのliはデザインで確認すると1つ1つのアイテムがすべて105pxの
+横幅になっている。→width指定テキストを中央指定するためにcenter入れる */
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+
+}
+
+/* フォバーアクション */
+#top {
+    text-align: center;
+}
+
+main {
+    width: 100%;
+}
+
+.have {
+    max-width: 516px;
+    font-size: 30px;
+    line-height: 3.9;
+    margin: 0 auto;
+}
+
+
+.happy {
+    font-size: 82px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+}
+
+.mainiti {
+    font-size: 23px;
+    line-height: 1.65;
+    letter-spacing: 0.1em;
+}
+
+#ABOUT-US {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.about-us-logo {
+    width: 272px;
+}
+
+
+.menu-logo {
+    width: 15%;
+    margin: 0 auto;
+}
+
+.containar {
+    display: flex;
+}
+
+.gallery-logo {
+    width: 245px;
+    margin: 0 auto;
+}
+
+.event-logo {
+    width: 174px;
+    margin: 0 auto;
+}
