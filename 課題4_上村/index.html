@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="header_slider">
             <img src="./images/pc_first-100.jpg" alt="店内の様子">
 
@@ -24,11 +24,11 @@
             <nav class="pc_nav">
                 <!-- ナビゲーションメニューのタグ -->
                 <ul>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">EVENT</a></li>
-                    <li><a href="">ACCESS</a></li>
+                    <li><a href="#ABOUT-US">ABOUT US</a></li>
+                    <li><a href="#MENU">MENU</a></li>
+                    <li><a href="#GALLERY">GALLERY</a></li>
+                    <li><a href="#EVENT">EVENT</a></li>
+                    <li><a href="ACCESS">ACCESS</a></li>
                     <!-- 文字をサイトに入れ込む場合はデザインデータからコピペで持ってくる。 -->
                 </ul>
             </nav>
@@ -46,24 +46,24 @@
 
         <section id="ABOUT-US">
 
-            <img src="images/pc_about-100.jpg" alt="コーヒーの写真">
+            <img class="imgko-hi-" src="images/pc_about-100.jpg" alt="コーヒーの写真">
 
-            <div class="2">
+            <div class="about2">
                 <div class="about-us-logo">
                     <img src="images/about_us@2x.png" alt="ABOUT US">
                 </div>
-                <div class="text">
-                    <p>私たちが提供する<br>
-                        こだわりのコーヒー</p>
-                    <p>サービスを提供する上での想いや心がけていることなど、メッ<br>
-                        セージを文章で紹介します。サービスを提供する上での想い<br>
-                        や心がけていることなど、メッセージを文章で紹介します。サー<br>
-                        ビスを提供する上での想いや心がけていることなど、メッセー<br>
-                        ジを文章で紹介します。サービスを提供する上での想いや心<br>
-                        がけていることなど、メッセージを文章で紹介します。サービス<br>
-                        を提供する上での想いや心がけていることなど、メッセージを<br>
-                        文章で紹介します。</p>
-                </div>
+
+                <p class="watasi">私たちが提供する<br>
+                    こだわりのコーヒー</p>
+                <p class="sa-bis">サービスを提供する上での想いや心がけていることなど、メッ<br>
+                    セージを文章で紹介します。サービスを提供する上での想い<br>
+                    や心がけていることなど、メッセージを文章で紹介します。サー<br>
+                    ビスを提供する上での想いや心がけていることなど、メッセー<br>
+                    ジを文章で紹介します。サービスを提供する上での想いや心<br>
+                    がけていることなど、メッセージを文章で紹介します。サービス<br>
+                    を提供する上での想いや心がけていることなど、メッセージを<br>
+                    文章で紹介します。</p>
+
             </div>
 
         </section>
@@ -75,14 +75,18 @@
             </div>
             <div class="containar">
                 <div class="box">
-                    <img src="images/pc_menu_drink-100.jpg" alt="ドリンクの写真">
+
+                    <img class="img3" src="images/pc_menu_drink-100.jpg" alt="ドリンクの写真">
+
                     <h3>Drink</h3>
                     <p>ドリンクメニューの概要を100文字程度で<br>
                         紹介します。素材やこだわりなどをアピー<br>
                         ルしていきます。</p>
                 </div>
                 <div class="box">
-                    <img src="images/pc_menu_food-100.jpg" alt="foodの写真">
+
+                    <img class="img3" src="images/pc_menu_food-100.jpg" alt="foodの写真">
+
                     <h3>Food</h3>
                     <p>フードメニューの概要を100文字程度で紹<br>
                         介します。素材やこだわりなどをアピール<br>
@@ -90,7 +94,9 @@
 
                 </div>
                 <div class="box">
-                    <img src="images/pc_menu_sweets-100.jpg" alt="sweetsの写真">
+
+                    <img class="img3" src="images/pc_menu_sweets-100.jpg" alt="sweetsの写真">
+
                     <h3>Sweets</h3>
                     <p>スイーツメニューの概要を100文字程度で<br>
                         紹介します。素材やこだわりなどをアピー<br>
@@ -107,12 +113,13 @@
             <div class="gallery-logo">
                 <img src="images/gallery@2x.png" alt="GALLERY">
             </div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-
+            <div class="gallery">
+                <img src="images/pc_gallary_05-100.jpg" alt="店内の様子">
+                <img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆">
+                <img src="images/pc_gallary_03-100.jpg" alt="店内２">
+                <img src="images/pc_gallary_02-100.jpg" alt="CAFEのロゴ">
+                <img src="images/pc_gallary_01-100.jpg" alt="コーヒー">
+            </div>
 
         </section>
 
@@ -122,16 +129,33 @@
                 <img src="images/event@2x.png" alt="EVENT">
             </div>
 
-            <div class="day">
-                2020.06.23
-                2020.03.15
-                2020.02.06
+            <div class="osirase">
+                <p class="day">
+                    2020.06.23 <br>
+                    2020.03.15 <br>
+                    2020.02.06 <br>
+                </p>
+                <p class="day2">
+                    7月はイベント出店のため0/0お休みします<br>
+                    春の新商品新発売。話題のあのブランドとコラボ<br>
+                    コーヒーの日で30%OFFイベントを開催[3日間限定]
+                </p>
             </div>
-            <div class="ko-hi-">
-                7月はイベント出店のため0/0お休みします<br>
-                春の新商品新発売。話題のあのブランドとコラボ<br>
-                コーヒーの日で30%OFFイベントを開催[3日間限定]
-            </div>
+
+            <section id="ACCESS">
+                <div class="access-logo">
+                    <img src="images/access@2x.png" alt="ACCESS">
+                </div>
+                <div class="accessmap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.995256419282!2d135.76362057608682!3d35.006823866725725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001096ea22ae12b%3A0x79b842564b9809a4!2sUFO!5e0!3m2!1sja!2sjp!4v1760436679093!5m2!1sja!2sjp"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+            </section>
+
 
 
 
@@ -139,10 +163,26 @@
         </section>
 
         <footer>
-
+            <div class="footer1">
+                <div class="footerlogo">
+                    <img src="images/design_cafe_logo_footer@2x.png" alt="DESIGN CAFE">
+                </div>
+                <div class="address">
+                    <p class="address2">
+                        OPEN 18:00 / CLOSE 24:00 <br>
+                        〒150-0022 <br>
+                        東京都渋谷区東京南123デザインビルB1 <br>
+                        MAIL：info@designcafe.tokyo <br>
+                    </p>
+                </div>
+            </div>
+            <p class="last">© 2021 DESIGN CAFE</p>
         </footer>
 
+        <div>
+            <a href="#header"> <img class="pagetop" src="images/to_top@2x.png" alt="ページトップ"></a>
 
+        </div>
 
     </main>
 </body>
