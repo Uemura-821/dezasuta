@@ -105,6 +105,7 @@ a:hover {
 #ABOUT-US {
     max-width: 1000px;
     margin: 0 auto;
+    align-items: flex-start;
     padding: 0 10px 96px 0;
     display: flex;
     justify-content: space-between;
@@ -113,6 +114,10 @@ a:hover {
 .imgko-hi- {
     width: 50%;
     border-radius: 0 0 82px 0;
+}
+
+.about2 {
+    width: 42%;
 }
 
 .about-us-logo {
@@ -156,6 +161,10 @@ h3 {
     color: #d30202;
 }
 
+.box {
+    width: 30%;
+}
+
 .box p {
     font-size: 17px;
     line-height: 1.5;
@@ -163,7 +172,7 @@ h3 {
 }
 
 .img3 {
-    width: 300%;
+
     border-radius: 0 42px 0 0;
 }
 
@@ -190,26 +199,24 @@ h3 {
 
 .osirase {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
     max-width: 1000px;
     padding-right: 10px;
     background: #ffffff;
     border: 3.7px solid #4F260B;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
-.day {
-    padding: 40px 0 40px 150px;
+.osirase p {
     font-size: 23px;
     line-height: 2;
-
+    text-align: left;
 }
 
-.day2 {
-    padding: 40px 180px 40px 0px;
-    font-size: 23px;
-    line-height: 2;
-}
 
 .access-logo {
     width: 213px;
@@ -221,7 +228,6 @@ iframe {
     display: block;
     width: 100%;
     height: 470px;
-    filter: grayscale(100%) brightness(40%) contrast(130%)
 }
 
 /* iframeはデフオルトで下に隙間ができるため、
