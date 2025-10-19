@@ -191,6 +191,10 @@ h3 {
     justify-content: center;
 }
 
+.gallery img {
+    width: 20%;
+}
+
 .event-logo {
     width: 174px;
     margin: 0 auto;
@@ -198,10 +202,6 @@ h3 {
 }
 
 .osirase {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: 200px;
     max-width: 1000px;
     padding-right: 10px;
@@ -209,12 +209,31 @@ h3 {
     border: 3.7px solid #4F260B;
     margin: 0 auto;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* display flexを使うと、子要素が複数個ある場合、
+横並びが発生する。
+しかし、今回の場合は子要素が１つしかないため、
+横に並ぶ相手がいないため、並びの効果は
+発生せずその1つの子を中央に配置するだけの状態になる */
+
+.osirase2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.p {
+    display: flex;
+    gap: 46px;
 }
 
 .osirase p {
     font-size: 23px;
     line-height: 2;
-    text-align: left;
+
 }
 
 
