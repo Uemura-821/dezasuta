@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #e8d9bf;
 }
@@ -152,7 +156,7 @@ a:hover {
 .containar {
     display: flex;
     justify-content: space-between;
-    padding-right: 10px;
+    padding: 0 10px;
 }
 
 h3 {
@@ -195,6 +199,10 @@ h3 {
     width: 20%;
 }
 
+#EVENT {
+    padding: 0 10px;
+}
+
 .event-logo {
     width: 174px;
     margin: 0 auto;
@@ -204,7 +212,7 @@ h3 {
 .osirase {
     height: 200px;
     max-width: 1000px;
-    padding-right: 10px;
+    padding-right: 0 10px;
     background: #ffffff;
     border: 3.7px solid #4F260B;
     margin: 0 auto;
@@ -236,6 +244,11 @@ h3 {
 
 }
 
+.border {
+    border-bottom: 1.5px solid #4F260B;
+
+}
+
 
 .access-logo {
     width: 213px;
@@ -259,6 +272,8 @@ iframe {
     width: 125px;
 }
 
+
+
 footer {
     background: #ffffff;
 
@@ -267,6 +282,7 @@ footer {
 
 .footerlogo {
     width: 227px;
+    padding-left: 10px;
 }
 
 .address2 {
