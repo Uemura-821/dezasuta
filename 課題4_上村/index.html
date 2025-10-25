@@ -7,14 +7,17 @@
     <title>Deszign Cafe</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
     <header id="header">
         <div class="header_slider">
-            <img src="./images/pc_first-100.jpg" alt="店内の様子">
-
+            <!-- 画面幅が767px以下の時に写真が切り替わる -->
+            <picture>
+                <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                <img src="./images/pc_first-100.jpg" alt="店内の様子">
+            </picture>
         </div>
         <div class="header_wrap">
             <h1 class="header_logo">
@@ -22,7 +25,6 @@
                 <!-- 画像側からなくなったとき、なんの文字かわからなくなるからオルト文字と同じものをaltに書いておく。 -->
             </h1>
             <nav class="pc_nav">
-                <!-- ナビゲーションメニューのタグ -->
                 <ul>
                     <li><a href="#ABOUT-US">ABOUT US</a></li>
                     <li><a href="#MENU">MENU</a></li>
@@ -30,6 +32,18 @@
                     <li><a href="#EVENT">EVENT</a></li>
                     <li><a href="#ACCESS">ACCESS</a></li>
                     <!-- 文字をサイトに入れ込む場合はデザインデータからコピペで持ってくる。 -->
+                </ul>
+            </nav>
+            <div class="sp_btn">
+                <span></span>
+            </div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#ABOUT-US">ABOUT US</a></li>
+                    <li><a href="#MENU">MENU</a></li>
+                    <li><a href="#GALLERY">GALLERY</a></li>
+                    <li><a href="#EVENT">EVENT</a></li>
+                    <li><a href="#ACCESS">ACCESS</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,9 +59,8 @@
         </div>
 
         <section id="ABOUT-US">
-
             <img class="imgko-hi-" src="images/pc_about-100.jpg" alt="コーヒーの写真">
-
+            <img class="imgko-hi-2" src="images/about_us@2x-100.jpg" alt="コーヒースマホ版">
             <div class="about2">
                 <h2 class="about-us-logo">
                     <img src="images/about_us@2x.png" alt="ABOUT US">
@@ -70,18 +83,20 @@
             </h2>
             <div class="containar">
                 <div class="box">
-
-                    <img class="img3" src="images/pc_menu_drink-100.jpg" alt="ドリンクの写真">
-
+                    <picture>
+                        <source srcset="./images/drink_sp@2x-100.jpg" media="(max-width:767px)">
+                        <img class="img3" src="images/pc_menu_drink-100.jpg" alt="ドリンクの写真">
+                    </picture>
                     <h3>Drink</h3>
                     <p>ドリンクメニューの概要を100文字程度で
                         紹介します。素材やこだわりなどをアピー
                         ルしていきます。</p>
                 </div>
                 <div class="box">
-
-                    <img class="img3" src="images/pc_menu_food-100.jpg" alt="foodの写真">
-
+                    <picture>
+                        <source srcset="./images/food_sp@2x-100.jpg" media="(max-width:767px)">
+                        <img class="img3" src="images/pc_menu_food-100.jpg" alt="foodの写真">
+                    </picture>
                     <h3>Food</h3>
                     <p>フードメニューの概要を100文字程度で紹
                         介します。素材やこだわりなどをアピール
@@ -89,9 +104,10 @@
 
                 </div>
                 <div class="box">
-
-                    <img class="img3" src="images/pc_menu_sweets-100.jpg" alt="sweetsの写真">
-
+                    <picture>
+                        <source srcset="./images/cake_sp@2x-100.jpg" media="(max-width:767px)">
+                        <img class="img3" src="images/pc_menu_sweets-100.jpg" alt="sweetsの写真">
+                    </picture>
                     <h3>Sweets</h3>
                     <p>スイーツメニューの概要を100文字程度で
                         紹介します。素材やこだわりなどをアピー
@@ -116,6 +132,9 @@
                 <img src="images/pc_gallary_01-100.jpg" alt="コーヒー">
             </div>
 
+            <div class="gallery2">
+                <img src="images/mobile_gallery-100.jpg" alt="  ギャラリスマホ版版">
+            </div>
         </section>
 
 
@@ -156,12 +175,6 @@
 
         </section>
 
-
-
-
-
-        </section>
-
         <footer>
             <div class="footer1">
                 <h3 class="footerlogo">
@@ -185,6 +198,16 @@
         </div>
 
     </main>
+
+    <script>
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+
+            })
+        })
+    </script>
 </body>
 
 </html>
