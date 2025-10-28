@@ -134,7 +134,7 @@ a:hover {
 
 .about-us-logo {
     width: 272px;
-    padding: 51px 0;
+    padding: 50px 0;
 }
 
 .watasi {
@@ -224,9 +224,9 @@ h3 {
 }
 
 .osirase {
-    height: 200px;
-    max-width: 1000px;
-    padding-right: 10px;
+    /* height: 200px;
+    max-width: 1000px; */
+    padding: 30px 0 30px 0;
     background: #ffffff;
     border: 3.7px solid #4F260B;
     margin: 0 auto;
@@ -337,12 +337,12 @@ footer {
 /* パソコン表示では不要↑ */
 
 @media screen and (max-width: 1100px) {
+
+
     .happy {
         font-size: 67px;
-    }
-
-    .mainiti {
-        font-size: 19px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
     }
 
     .pc_nav {
@@ -455,15 +455,30 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-    .happy {
-        font-size: 57px;
+    .have {
+        font-size: 17px;
+        margin: 40px 0 20px 0;
     }
+
+    .happy {
+        font-size: 38px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 10px;
+    }
+
+    .mainiti {
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.1;
+        margin: 0;
+    }
+
 
     #ABOUT-US {
         flex-direction: column;
         align-items: center;
-        padding-right: 0;
-        padding-left: 10px;
+        padding: 0;
     }
 
     .imgko-hi- {
@@ -478,6 +493,8 @@ footer {
 
     .about-us-logo {
         order: 1;
+        width: 160px;
+        padding: 50px 0 10px 0;
     }
 
     .imgko-hi-2 {
@@ -489,14 +506,32 @@ footer {
     .watasi {
         order: 3;
         width: 100%;
+        font-size: 36px;
+        line-height: 1.3;
+        padding: 0 0 0 5px;
+        box-sizing: border-box;
+        margin: 30px 0 20px 0;
     }
 
     .sa-bis {
         order: 4;
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 0 30px 0 10px;
+        box-sizing: border-box;
     }
 
     .about2 {
         text-align: left;
+    }
+
+    #MENU {
+        padding: 0;
+    }
+
+    .menu-logo {
+        width: 88px;
+        padding: 40px 0 10px 0;
     }
 
     .containar {
@@ -511,19 +546,27 @@ footer {
     }
 
     .box h3 {
-        font-size: 48px;
+        font-size: 40px;
+        line-height: 0.6;
     }
 
     .box p {
-        font-size: 20px;
+        font-size: 17px;
+        line-height: 1.6;
     }
 
     .img3 {
         width: 100%;
     }
 
+
+    #GALLERY {
+        padding: 0;
+    }
+
     .gallery-logo {
-        padding-top: 70px;
+        width: 142px;
+        padding: 40px 0 15px 0;
     }
 
     .gallery {
@@ -541,11 +584,12 @@ footer {
     }
 
     .event-logo {
-        padding-top: 30px;
+        width: 100px;
+        padding: 25px 0 15px 0;
     }
 
-    .osirase {
-        max-width: 100%;
+    .osirase2 {
+        gap: 0px;
     }
 
     .p {
@@ -558,13 +602,29 @@ footer {
 
     .p p {
         order: 2;
-        /* white-space: nowrap;
+    }
+
+    .osirase p {
+        font-size: 16px;
+        width: 333px;
+        white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis; */
+        text-overflow: ellipsis;
     }
 
     .access-logo {
-        padding-top: 30px;
+        width: 124px;
+        padding: 25px 0 5px 0;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+    .pagetop {
+        width: 100px;
+        right: 10px;
+        bottom: 200px;
     }
 
     footer {
@@ -574,6 +634,23 @@ footer {
     }
 
     .footer1 {
+        width: 100%;
         flex-direction: column;
+        padding-top: 40px;
+        gap: 25px;
+    }
+
+    .footerlogo {
+        padding-left: 20px;
+    }
+
+    .address2 {
+        font-size: 18px;
+        line-height: 1.7;
+        padding-left: 10px;
+    }
+
+    .last {
+        padding-bottom: 25px;
     }
 }
