@@ -455,10 +455,15 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    .happy {
+        font-size: 57px;
+    }
+
     #ABOUT-US {
-        display: flex;
         flex-direction: column;
         align-items: center;
+        padding-right: 0;
+        padding-left: 10px;
     }
 
     .imgko-hi- {
@@ -469,7 +474,7 @@ footer {
         display: contents;
     }
 
-    /* スマホサイズではボックスを生成しない */
+    /* スマホサイズではボックスを生成しない 箱から要素を取り出す*/
 
     .about-us-logo {
         order: 1;
@@ -483,6 +488,7 @@ footer {
 
     .watasi {
         order: 3;
+        width: 100%;
     }
 
     .sa-bis {
@@ -496,10 +502,28 @@ footer {
     .containar {
         flex-direction: column;
         align-items: center;
+        gap: 60px;
+        padding: 0 40px;
     }
 
     .box {
         width: 100%;
+    }
+
+    .box h3 {
+        font-size: 48px;
+    }
+
+    .box p {
+        font-size: 20px;
+    }
+
+    .img3 {
+        width: 100%;
+    }
+
+    .gallery-logo {
+        padding-top: 70px;
     }
 
     .gallery {
@@ -509,10 +533,38 @@ footer {
     .gallery2 {
         display: block;
         width: 100%;
+        /* 非表示から表示にするにはnone以外のものに設定しないといけない。divタグは元々block要素。 */
     }
 
     .gallery2 img {
         width: 100%;
+    }
+
+    .event-logo {
+        padding-top: 30px;
+    }
+
+    .osirase {
+        max-width: 100%;
+    }
+
+    .p {
+        display: contents;
+    }
+
+    .border {
+        order: 1;
+    }
+
+    .p p {
+        order: 2;
+        /* white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; */
+    }
+
+    .access-logo {
+        padding-top: 30px;
     }
 
     footer {
