@@ -12,6 +12,21 @@ body {
     width: 100%;
 }
 
+.slick-dots {
+    bottom: 20px;
+
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+    font-size: 14px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
 .header {
     position: relative;
 }
@@ -107,6 +122,10 @@ a:hover {
     letter-spacing: 0.1em;
     text-align: center;
     margin-bottom: 90px;
+}
+
+.br-sp {
+    display: none;
 }
 
 #ABOUT-US {
@@ -263,9 +282,9 @@ h3 {
 }
 
 .border {
-    border-bottom: 1.5px solid #4F260B;
+    /* border-bottom: 1.5px solid #4F260B; */
 
-    /* text-decoration: underline; */
+    text-decoration: underline;
 
 }
 
@@ -343,6 +362,14 @@ footer {
         font-size: 67px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+    }
+
+    .mainiti {
+        font-size: 18px;
+    }
+
+    .watasi {
+        font-size: 38px;
     }
 
     .pc_nav {
@@ -474,6 +501,9 @@ footer {
         margin: 0;
     }
 
+    .br-sp {
+        display: block;
+    }
 
     #ABOUT-US {
         flex-direction: column;
@@ -589,24 +619,20 @@ footer {
     }
 
     .osirase2 {
-        gap: 0px;
+        width: 100%;
+        /* 親要素と同じ横幅にする */
+        gap: 20px;
+        padding: 0 20px;
     }
 
     .p {
-        display: contents;
-    }
+        flex-direction: column;
+        gap: 0px;
 
-    .border {
-        order: 1;
-    }
-
-    .p p {
-        order: 2;
     }
 
     .osirase p {
         font-size: 16px;
-        width: 333px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
