@@ -132,11 +132,12 @@
                 <img src="images/pc_gallary_03-100.jpg" alt="店内２">
                 <img src="images/pc_gallary_02-100.jpg" alt="CAFEのロゴ">
                 <img src="images/pc_gallary_01-100.jpg" alt="コーヒー">
+                <img src="images/pc_gallary_01-100.jpg" alt="コーヒー">
             </div>
 
-            <div class="gallery2">
+            <!-- <div class="gallery2">
                 <img src="images/mobile_gallery-100.jpg" alt="ギャラリースマホ版版">
-            </div>
+            </div> -->
         </section>
 
 
@@ -217,8 +218,26 @@
 
             })
 
-            //  $('.header_slider').slick()
-
+            $('.gallery').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false
+                        }
+                    }
+                    // 指定したブレイクポイントでslickを無効化するには
+                    // オブジェクトの代わりに settings: "unslick" を指定。
+                ]
+            });
 
         })
     </script>
